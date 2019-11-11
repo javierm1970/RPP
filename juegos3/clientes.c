@@ -858,7 +858,7 @@ void juegosSortDesc(Juegos* list ,int len)
 
             i=strcmp(list[j].descripcion,list[j-1].descripcion);
 
-            if(i<0)
+            if(i>0)
 	        {
                 aux = list[j];
                 list[j] = list[j - 1];

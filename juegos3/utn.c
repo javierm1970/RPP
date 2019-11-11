@@ -7,7 +7,6 @@
 #include "clientes.h"
 #include "utn.h"
 
-
 int hardCord(Juegos gam[],int len)
 {
     int res=0;
