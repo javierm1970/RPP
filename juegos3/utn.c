@@ -450,7 +450,7 @@ int getInt(int *numero,char mensaje1[],char mensajeError1[],int minimo,int maxim
     return resultado;
 }
 
-void getString(char mensaje[],char input[],int tamano)
+void getString(char mensaje[],char input[],int lowLimit, int tamano)
 {
     int r;
     int flagSalida=0;
@@ -461,8 +461,8 @@ void getString(char mensaje[],char input[],int tamano)
         fflush(stdin);
         miFgets(input,tamano);
 
-        if (strlen(input)<0 ||strlen(input)>tamano){
-            printf("Tamano excedigo... reintente\n");
+        if (strlen(input)<lowLimit ||strlen(input)>tamano){
+            printf("Error Tamano no valido (%d - %d) reintente\n",lowLimit,tamano);
             continue;
         }
         r=esAlfaNumerico(input);

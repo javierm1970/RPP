@@ -170,7 +170,7 @@
 	"clientes.h"
 	"utn.h"
 
-1573249470 source:d:\javier\clase 24-25\rpp\juegos3\clientes.c
+1573516281 source:d:\javier\clase 24-25\rpp\juegos3\clientes.c
 	<stdio.h>
 	<stdlib.h>
 	<ctype.h>
@@ -181,7 +181,7 @@
 
 1573249470 d:\javier\clase 24-25\rpp\juegos3\clientes.h
 
-1573249470 d:\javier\clase 24-25\rpp\juegos3\utn.h
+1573518024 d:\javier\clase 24-25\rpp\juegos3\utn.h
 
 1573249470 source:d:\javier\clase 24-25\rpp\juegos3\main.c
 	<stdio.h>
@@ -192,7 +192,7 @@
 	"clientes.h"
 	"utn.h"
 
-1573516110 source:d:\javier\clase 24-25\rpp\juegos3\utn.c
+1573518029 source:d:\javier\clase 24-25\rpp\juegos3\utn.c
 	<stdio.h>
 	<stdlib.h>
 	<ctype.h>

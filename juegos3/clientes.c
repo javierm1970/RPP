@@ -1215,21 +1215,21 @@ Clientes carga_Clientes(Clientes cli3,int len,int id)
     printf("\nId de Empleado: %d\n",id);
 
     do{
-        getString("ingrese un nombre(50): ",name,51);
+        getString("ingrese un nombre(50): ",name,3,51);
         valida_nom=esAlfaNumerico(name);
         if (valida_nom) break;
         printf("Contiene caracteres no permitidos, reintente... ");
     }while (valida_nom!=1);
 
     do{
-        getString("ingrese un apellido(50): ",lastName,51);
+        getString("ingrese un apellido(50): ",lastName,3,51);
         valida_ape=esAlfaNumerico(name);
         if (valida_ape) break;
         printf("Contiene caracteres no permitidos, reintente... ");
     }while (valida_ape!=1);
 
     do{
-        getString("ingrese domicilio(50): ",domicilio,51);
+        getString("ingrese domicilio(50): ",domicilio,5,51);
         valida_dom=esAlfaNumerico(domicilio);
         if (valida_dom) break;
         printf("Contiene caracteres no permitidos, reintente... ");
@@ -1247,7 +1247,7 @@ Clientes carga_Clientes(Clientes cli3,int len,int id)
     }while (flagSalida4==0);
 
     do{
-        getString("ingrese numero de Tel(10): ",telefono,10);
+        getString("ingrese numero de Tel(10): ",telefono,8,16);
         valida_tel=esAlfaNumerico(telefono);
         if (valida_tel) break;
         printf("Contiene caracteres no permitidos, reintente... ");
@@ -1567,7 +1567,7 @@ int ModificaUnCliente (Clientes* list,int len)
             case '1':
 
                 do{
-                    getString("ingrese un nombre(50): ",cli.name,51);
+                    getString("ingrese un nombre(50): ",cli.name,3,51);
                     valida_Nom=esAlfaNumerico(cli.name);
                     if (valida_Nom) break;
                     printf("Contiene caracteres no permitidos, reintente... ");
@@ -1578,7 +1578,7 @@ int ModificaUnCliente (Clientes* list,int len)
             case '2':
 
                 do{
-                    getString("ingrese un apellido(50): ",cli.lastName,51);
+                    getString("ingrese un apellido(50): ",cli.lastName,3,51);
                     valida_Ape=esAlfaNumerico(cli.lastName);
                     if (valida_Ape) break;
                     printf("Contiene caracteres no permitidos, reintente... ");
@@ -1589,7 +1589,7 @@ int ModificaUnCliente (Clientes* list,int len)
             case '3':
 
                 do{
-                    getString("ingrese Domicilio(50): ",cli.domicilio,51);
+                    getString("ingrese Domicilio(50): ",cli.domicilio,5,51);
                     valida_Dom=esAlfaNumerico(cli.domicilio);
                     if (valida_Dom) break;
                     printf("Contiene caracteres no permitidos, reintente... ");
@@ -1618,7 +1618,7 @@ int ModificaUnCliente (Clientes* list,int len)
             case '5':
 
                 do{
-                    getString("ingrese Telefono: ",cli.telefono,12);
+                    getString("ingrese Telefono: ",cli.telefono,8,16);
                     valida_Tel=esAlfaNumerico(cli.telefono);
                     if (valida_Tel) break;
                     printf("Contiene caracteres no permitidos, reintente... ");

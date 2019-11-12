@@ -138,7 +138,7 @@ int getInt(int *numero,char mensaje1[],char mensajeError1[],int minimo,int maxim
  * \return char input
  *
  */
-void getString(char mensaje[],char input[],int tamano);
+void getString(char mensaje[],char input[],int lowLimit, int tamano);
 
 /** \brief es una herramienta de validacion numerica
  *
